@@ -12,6 +12,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   height: 100%;
   font-family: $defaultFont;
@@ -21,35 +22,42 @@ body {
 
 #headerWrapper {
   background-color: #abc;
-  color: $secundarycolor;
+  color: $secondaryColor;
 }
+
 header {
   display: flex;
   align-items: flex-end;
   padding: 1rem $gutter;
   gap: 8px;
+
   h1 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: $normalWeight;
   }
 }
+
 #navWrapper {
   background-color: bisque;
 }
+
 nav {
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+
     li {
       flex: 1;
     }
   }
+
   li.active {
     background-color: red;
   }
+
   a {
     display: block;
     padding: 0.75rem;
@@ -65,13 +73,15 @@ nav {
 
 //begin the footer
 #footerWrapper {
-    background-color: blue;
+  background-color: blue;
 }
+
 footer {
-    padding: 0.5rem $gutter;
-    p{
-        margin: 0;
-        font-weight: $lightWeight;
-        text-align: center;
-    }
+  padding: 0.5rem $gutter;
+
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+  }
 }
