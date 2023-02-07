@@ -333,8 +333,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: #001adb;
+  background-color: #7B36E3;
+  color: #DBD0E8;
 }
 
 header {
@@ -350,7 +350,7 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: bisque;
+  background-color: #A87DE8;
 }
 
 nav ul {
@@ -363,21 +363,21 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: red;
+  background-color: #7D029C;
 }
 nav a {
   display: block;
   padding: 0.75rem;
-  color: azure;
+  color: #E3BCEE;
   text-align: center;
   text-decoration: none;
 }
 nav a:hover {
-  color: aqua;
+  color: #E9DEE9;
 }
 
 #footerWrapper {
-  background-color: blue;
+  background-color: #DBD0E8;
 }
 
 footer {
