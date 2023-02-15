@@ -26,17 +26,16 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem $gutter;
-  gap: 8px;
+  padding:5rem 2%;
+  background-color: aqua;
+  display:grid;
+  grid-template-columns: 130px auto;
 
-  h1 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: $normalWeight;
-  }
 }
+
+  header h1 {margin: 0; font-size: 1.2rem; marging-top:.5rem;}
+  header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
+  
 
 #navWrapper {
   background-color:#A87DE8;
