@@ -1,3 +1,20 @@
 /*--Header--*/
     header h1 {font-size: 1.6rem;margin-top: 1rem;}
     header h2 {font-size: 1.3rem;}
+    h1{ color: rgb(199, 228, 185);}
+
+    /*--------Main------*/
+div.fruitGallery figure {
+    flex-basis: 46%;
+}
+/*----Nav----*/
+nav {
+    a{ justify-content:space-between;
+
+}
+nav ul li.active {
+    display: flex;
+    background-color: none;
+    color: $primaryColor;
+}
+}

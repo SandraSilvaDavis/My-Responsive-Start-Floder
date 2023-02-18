@@ -327,30 +327,37 @@ html {
 
 body {
   height: 100%;
-  font-family: "Karla", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  color: #333;
+  color: rgb(70, 119, 89);
 }
 
 #headerWrapper {
   background-color: #7B36E3;
-  color: #DBD0E8;
+  color: #de3308;
 }
 
 header {
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem 16pxz;
-  gap: 8px;
+  padding: 5rem 2%;
+  background-color: rgb(228, 241, 200);
+  display: grid;
+  grid-template-columns: 130px auto;
 }
+
 header h1 {
   margin: 0;
   font-size: 1.2rem;
-  font-weight: 500;
+  marging-top: 0.5rem;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 #navWrapper {
-  background-color: #A87DE8;
+  background-color: #a8d7af;
 }
 
 nav ul {
@@ -358,26 +365,50 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #7D029C;
+  background-color: #62b76f;
 }
 nav a {
   display: block;
   padding: 0.75rem;
-  color: #E3BCEE;
+  color: rgb(71, 172, 101);
   text-align: center;
   text-decoration: none;
+  justify-content: center;
 }
 nav a:hover {
-  color: #E9DEE9;
+  background-color: #eef7ef;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+  color: rgb(22, 122, 52);
+}
+
+/*------Main------*/
+main {
+  min-height: 10rem;
+}
+
+div.fruitGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.fruitGallery figure {
+  flex-basis: 96%;
+  margin: 1rem 2%;
+}
+
+div.fruitGallery figure img {
+  width: 100%;
 }
 
 #footerWrapper {
-  background-color: #DBD0E8;
+  background-color: #c5f4cd;
 }
 
 footer {
@@ -390,16 +421,51 @@ footer p {
 }
 
 @media only screen and (min-width: 35rem) {
-  header {
-    padding: 2rem 16pxz;
-  }
+  /*--Header--*/
   header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  header h2 {
+    font-size: 1.3rem;
+  }
+  h1 {
+    color: rgb(199, 228, 185);
+  }
+  /*--------Main------*/
+  div.fruitGallery figure {
+    flex-basis: 46%;
+  }
+  /*----Nav----*/
+  nav a {
+    justify-content: space-between;
+  }
+  nav nav ul li.active {
+    display: flex;
+    background-color: none;
+    color: black;
   }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
+  header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700px;
+  }
+  header h1 {
+    font-size: xx-large;
+    color: rgb(22, 122, 52);
+  }
+  header h2 {
+    font-size: large;
+    color: rgb(22, 122, 52);
+  }
+  nav ul li.active {
+    justify-content: left;
+  }
+  nav, footer {
     max-width: 60rem;
-    border: 1px solid pink;
+  }
+  div.fruitGallery figure {
+    flex-basis: 29%;
   }
 }
