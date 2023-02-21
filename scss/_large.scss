@@ -13,6 +13,7 @@ header h2{
 
 nav ul li.active {
     justify-content:left;
+    flex-direction: none;
 }
 nav,footer {
     max-width: 60rem;
