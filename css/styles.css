@@ -347,7 +347,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.2rem;
-  marging-top: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 header h2 {
@@ -440,10 +440,8 @@ footer p {
   nav a {
     justify-content: space-between;
   }
-  nav ul li.active li {
-    display: flex;
-    background-color: none;
-    color: black;
+  nav ul {
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 60rem) {

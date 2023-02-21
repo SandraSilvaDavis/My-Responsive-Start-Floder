@@ -13,11 +13,9 @@ nav {
 
 }
 
-nav ul li.active li{
-    display: flex;
-    background-color: none;
-    color: $primaryColor;
-  
-
-  
+nav ul {
+    flex-direction: row;
+   
 }
+
+
